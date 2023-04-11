@@ -2,7 +2,5 @@
 # (т.е. числа вида 2^k), не превосходящие числа N.
 
 n = int(input("Введите число N: "))
-i = 0
-while 2**i < n:
-    print(2**i, end = " ")
-    i += 1
+numbers = [2**i for i in range(n) if 2**i < n]
+print(numbers)
